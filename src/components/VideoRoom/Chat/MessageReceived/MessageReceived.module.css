@@ -1,0 +1,45 @@
+.MessageContainer {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: 80%;
+}
+
+.MessageContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    max-width: 100%;
+    background-color: #50adf4;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 4px 5px;
+    white-space: normal;
+    overflow-wrap: break-word; /* Newer, standardized property */
+}
+
+.MessageText {
+    font-size: 1em;
+    font-weight: 470;
+}
+
+.MessageStatusBar {
+    width: 100%;
+    height: 0.6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.MessageStatus {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.MessageTime {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    color: #ffffff;
+}

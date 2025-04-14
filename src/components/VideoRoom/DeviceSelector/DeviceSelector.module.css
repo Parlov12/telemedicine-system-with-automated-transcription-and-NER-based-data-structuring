@@ -1,0 +1,15 @@
+.DeviceSelectionContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #53bdea8e;
+    align-items: center;
+    height: auto;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+    .DeviceSelectionContainer {
+        padding: 2em 1em;
+    }
+}

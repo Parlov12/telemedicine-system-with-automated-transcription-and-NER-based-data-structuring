@@ -1,0 +1,209 @@
+.StateManager {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+ 
+.VideoRoomContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+ 
+.VideoHeader {
+    background-color: #007AD9;
+    width: 100%;
+    height: 40px;
+    text-align: start;
+    padding-left: 10px;
+    color: white;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    height: 5%;
+}
+ 
+.VideoContent {
+    /* background-color: aquamarine;    */
+    background-color: #c2d9ff7b;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative; /* Ovaj element postavlja referentnu točku za apsolutno pozicioniranje */
+    height: 95%;
+}
+ 
+.VideoFooter {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3px 0;
+    height: 10%;
+    margin-bottom: 20px;
+}
+ 
+ 
+.RemoteVideo {
+    background-color: #cbd0ff;
+    border: 1px solid #fff; /* Opcionalno: dodajte obrub radi bolje vidljivosti */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Opcionalno: dodajte sjenu radi bolje vidljivosti */
+    object-fit: cover;
+    width: 80%;
+    position: relative;
+    /* background-color: blueviolet; */
+}
+ 
+/* Default stilovi za manje ekrane */
+.LocalVideo {
+    background-color: #cbd0ff;
+    position: absolute;
+    /* bottom: 10em; Default za manje zaslone */
+    width: 25%;
+    height: 35%;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #fff; /* Opcionalno: dodajte obrub radi bolje vidljivosti */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Opcionalno: dodajte sjenu radi bolje vidljivosti */
+    object-fit:cover;
+    /* background-color: lightblue; */
+    z-index: 20;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+ 
+@media screen and (max-width: 1500px) {
+    .LocalVideo {
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+}
+ 
+/* Media query za šire zaslone (desktop) */
+@media screen and (min-width: 1500px) {
+    .LocalVideo {
+    }
+}
+ 
+.AnswerCallContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background-color: #E8E8E8;
+    padding: 20px;
+    z-index: 1000;
+}
+ 
+.AcceptCallButton {
+    margin: 2px;
+    border: none;
+    outline: none;
+    background-color: rgba(1, 128, 33, 0.5);
+    color: white;
+    font-size: medium;
+    border-radius: 5px;
+    height: 100%;
+}
+ 
+.DeclineCallButton {
+    border: none;
+    outline: none;
+    background-color: rgba(180, 10, 10, 0.644);
+    color: white;
+    font-size: medium;
+    border-radius: 5px;
+    height: 100%;
+}
+ 
+ 
+.AcceptCallButton:hover {
+    background-color: rgba(240, 255, 255, 0.507);
+    cursor:pointer;
+}
+ 
+.DeclineCallButton:hover {
+    background-color: rgba(240, 255, 255, 0.507);
+    cursor: pointer;
+}
+ 
+.ErrorMessageContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px 5px;
+    width: 80%;
+    top: 50%; /* Adjust the position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the container */
+    border-radius: 10px;
+    background-color: #ffffffd6;
+    z-index: 10; /* Ensure it appears above other elements */
+}
+ 
+.ErrorMessage {
+    color: red;
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+   
+}
+ 
+.ErrorYesButton {
+    background-color: #ff0000d6;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 0.5em;
+    width: auto;
+}
+ 
+.ErrorYesButton:hover {
+    background-color: #ee5151d6;
+}
+ 
+.StateManager {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.StateManagerDisconnected {
+    color: red;
+}
+ 
+.StateManagerInCall {
+    color: green;
+}
+ 
+.StateManagerIncomingCall {
+    color: purple;
+}
+ 
+.StateManagerCalling {
+    color: black;
+}
+ 
+.StateManagerReconnecting {
+    color: orange;
+}
+ 
+.StateManagerConnecting {
+    color: blue;
+}
+ 
+.CallBottomBar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

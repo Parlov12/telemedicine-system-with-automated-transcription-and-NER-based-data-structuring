@@ -1,0 +1,36 @@
+.ReconnectionContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Move the button back by 50% of its width and height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ReconnectionMessage {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.ReconnectButton {
+    color: white;
+    background-color: #1a93f077;
+    padding: 15px 25px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 650;
+}
+
+.ReconnectButton:hover {
+    color: white;
+    background-color: #a3d5fc77;
+    padding: 15px 25px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

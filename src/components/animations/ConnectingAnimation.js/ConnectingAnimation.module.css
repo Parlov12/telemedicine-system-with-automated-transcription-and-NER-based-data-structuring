@@ -1,0 +1,74 @@
+.AnimationContainer {
+  /* OVERLAY IN THE MIDDLE */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color:#E8E8E8; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ConnectingText {
+  color: #007AD9; /* Color of the dots */
+  margin-bottom: 3px;
+  font-size: 2em;
+  margin-bottom: 30px;
+  animation: fadeInOut 3s infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.DotContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px; /* Adjust width to fit your dots */
+
+}
+
+/* Style for individual dots */
+.Dot {
+  width: 15px; /* Size of the dot */
+  height: 15px; /* Size of the dot */
+  background-color: #007AD9; /* Color of the dots */
+  border-radius: 50%;
+  animation: pulse 1.2s infinite ease-in-out;
+}
+
+/* Keyframes for fading and scaling animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+/* Animation delay for each dot to create a staggered effect */
+.Dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.Dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.Dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.Dot:nth-child(4) {
+  animation-delay: 0.6s;
+}

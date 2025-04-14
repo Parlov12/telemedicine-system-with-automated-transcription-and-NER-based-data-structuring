@@ -1,0 +1,23 @@
+.EndCallButton {
+    border: none;
+    outline: none;
+    background-color: #ca0303;
+    padding: 1em;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.EndCallButton:hover {
+    border: none;
+    outline: none;
+    background-color: #ca0303;
+    padding: 1em;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.EndCallButtonIcon {
+    font-size: 1.8em;
+    color: white;
+}

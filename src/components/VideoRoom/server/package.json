@@ -1,0 +1,12 @@
+{
+    "devDependencies": {
+        "nodemon": "^3.1.4"
+    },
+    "dependencies": {
+        "peer": "^1.0.2",
+        "peerjs": "^1.5.4"
+    },
+    "scripts": {
+        "start": "nodemon server.js"
+    }
+}

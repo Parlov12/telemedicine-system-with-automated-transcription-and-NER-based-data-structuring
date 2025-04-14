@@ -1,0 +1,34 @@
+.Container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ConnectedContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3px;
+}
+
+.DisconnectedContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3px;
+}
+.ConnectedCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #008f00;
+    margin-right: 5px;
+}
+
+.DisconnectedCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    margin-right: 5px;
+}

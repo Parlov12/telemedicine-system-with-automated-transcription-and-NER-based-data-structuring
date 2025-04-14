@@ -1,0 +1,153 @@
+.MyDeviceSelectorContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0px 10px;
+}
+
+.ButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    width: 6em;
+    height: 3em;
+    padding: 2px 4px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.IconCustom {
+    font-size: 1.8em;
+}
+
+.ArrowCustom {
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+.ArrowCustom:hover {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.OptionsContainer {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: auto;
+    height: auto;
+    margin-bottom: 5px;
+    background-color: white;
+    z-index: 100;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* Hidding scroll bar */
+    /* inside here should work for firefox */
+    scrollbar-width: none;
+}
+
+/* HIDDING SCROLLBAR */
+
+/* Chrome, Safari */
+.OptionsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+/* firefox */
+.OptionsContainer {
+    scrollbar-width: none;
+    /* Hide scrollbar */
+    cursor: pointer;
+}
+
+/* Edge and other browsers */
+.OptionsContainer {
+    overflow: -ms-autohiding-scrollbar;
+    /* For Edge */
+}
+
+/* HIDDING SCROLLBAR END */
+
+
+
+.OptionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1em;
+    padding: 10px 15px;
+}
+
+
+.OptionContainerSelected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1em;
+    padding: 10px 15px;
+    background-color: #08579380;
+}
+
+
+.Option {
+    font-size: 1em;
+    /* Adjust font size relative to container */
+    text-align: center;
+    /* Center text inside the container */
+    width: 100%;
+    /* hidding long text */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* so the text ends with '...'*/
+    font-weight: 300;
+}
+
+
+.OptionContainer:hover {
+    background-color: #08579380;
+}
+
+@media screen and (max-width: 1500px) {
+    .ButtonsContainer {
+        width: 5em;
+        height: 3em;
+    }
+}
+
+.IconCustom:hover {
+    cursor: pointer;
+}
+
+.IconCustom {
+    font-size: 24px;
+    cursor: pointer;
+    position: relative; 
+}
+
+.Cross {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 60%; 
+    height: 2px;
+    background: black;
+    pointer-events: none; 
+    display: none; 
+    z-index: 1; 
+}
+
+.DisabledIcon {
+    opacity: 0.5;
+}
+
+
+
+

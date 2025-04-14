@@ -1,0 +1,39 @@
+.StateManager {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    z-index: 1000;
+    font-weight: bold;
+}
+
+.StateManagerDisconnected {
+    color: red;
+}
+
+.StateManagerInCall {
+    color: green;
+}
+
+.StateManagerIncomingCall {
+    color: purple;
+}
+
+.StateManagerCalling {
+    color: black;
+}
+
+.StateManagerReconnecting {
+    color: orange;
+}
+
+.StateManagerConnecting {
+    color: blue;
+}
+
+.StateManagerConnectionOn {
+    color: rgb(255, 76, 106);
+}

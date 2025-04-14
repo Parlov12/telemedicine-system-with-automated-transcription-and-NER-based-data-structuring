@@ -1,0 +1,51 @@
+.ReportForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    /* background-color: blue; */
+    border-top:2px solid #007bd950;
+    border-radius: 0;
+}
+ 
+.FormHeading {
+    text-align: center;
+    color: #007AD9;
+}
+ 
+.ReportInput {
+    width: 85%;
+    height: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: left;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    line-height: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+ .SubmitFormButton {
+    background-color: #007AD9;
+    color: white;
+    border: none;
+    margin-top: 1em;
+    height: 5%;
+    width: 25%;
+    font-size: medium;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1500px) {
+    .SubmitFormButton  {
+        margin-top: 1em;
+        height: 8%;
+        width: 30%;
+        font-size: small;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,212 @@
+.VideoRoomContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    margin: 0;
+} 
+ 
+.VideoHeader {
+    background-color: #007AD9;
+    width: 100%;
+    height: 40px;
+    text-align: start;
+    padding-left: 10px;
+    color: white;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    height: 5%;
+}
+ 
+.VideoContent {
+    background-color: #c2d9ff7b;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 95%;
+    width: 100%;
+}
+ 
+.VideoContainer {
+    height: 100%;
+    width: 75%;
+    position: relative;
+}
+ 
+.VideoFooter {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3px 0;
+    height: 10%;
+    width: 80%;
+    margin-bottom: 20px;
+}
+ 
+ 
+.RemoteVideo {
+    background-color: #007bd950;
+    border: 1px solid #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+ 
+.LocalVideo {
+    background-color: #007bd950;
+    position: absolute;
+   width: 25%;
+   bottom: 0;
+   right: 0;
+    border: 1px solid #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    object-fit:cover;
+    z-index: 20;
+
+}
+
+
+/* Media query za manje zaslone*/
+@media screen and (max-width: 1500px) {
+    .LocalVideo {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: 25%;
+    }
+}
+ 
+/* Media query za šire zaslone */
+@media screen and (min-width: 1500px) {
+    .LocalVideo {
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+}
+ 
+.AnswerCallContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 15px;
+    z-index: 1000;
+    padding: auto;
+}
+
+.CallButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.CallMessage {
+    text-align: center;
+    color: #007AD9;
+    font-size: 1.5em;
+
+}
+
+.AcceptCallButton {
+    border: none;
+    outline: none;
+    background-color: rgba(1, 128, 33, 0.5);
+    color: white;
+    font-size: 1.5em;
+    border-radius: 5px;
+    height: 100%;
+    padding: 0.5em 0.8em;
+    margin: 0.2em 0.5em;
+}
+ 
+.DeclineCallButton {
+    border: none;
+    outline: none;
+    background-color: rgba(180, 10, 10, 0.644);
+    color: white;
+    font-size: 1.5em;
+    border-radius: 5px;
+    height: 100%;
+    padding: 0.5em 0.8em;
+    margin: 0.2em 0.5em;
+}
+ 
+ 
+.AcceptCallButton:hover {
+    background-color: rgba(240, 255, 255, 0.507);
+    cursor:pointer;
+}
+ 
+.DeclineCallButton:hover {
+    background-color: rgba(240, 255, 255, 0.507);
+    cursor: pointer;
+}
+ 
+.CallBottomBar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.DetailsAndForm {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.CallFinishedContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000071;
+    color: #ffffff;
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight: 500;
+    z-index: 1000;
+}
+
+.CallFinishedMessage {
+
+}
+
+.CallFinishedButton {
+    border: none;
+    outline: none;
+    height: 2.5em;
+    width: 6em;
+    background-color: #007AD9;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.CallFinishedButton:hover {
+    border: none;
+    outline: none;
+    height: 2.5em;
+    width: 6em;
+    background-color: #79b7e6;
+    color: #ffffff;
+    cursor: pointer;
+}

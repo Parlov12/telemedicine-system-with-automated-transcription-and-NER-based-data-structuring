@@ -1,0 +1,54 @@
+.MessageContainer {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 80%;
+}
+.MessageContent {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word; /* Newer, standardized property */
+    background-color: #50adf4;  
+    border-radius: 5px;
+    margin: 5px;
+    padding: 4px 5px;
+    align-self: flex-end;
+}
+
+.MessageText {
+    font-size: 1em;
+    font-weight: 470;
+}
+
+.MessageStatusBar {
+    width: 100%;
+    height: 0.6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.MessageStatus {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.MessageTime {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.AlertCustom {
+    align-self: flex-start;
+    margin-top: 5px;
+    color: #f21919;
+    font-size: 1.2em;
+}
